@@ -4,64 +4,143 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Terms &amp; Conditions — QuickieCon</title>
+  <meta name="description" content="The terms that govern your use of QuickieCon.">
+  <meta name="theme-color" content="#0a0a0f">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <main>
-    <a class="brand" href="index.html">Quickie<span>Con</span></a>
-    <h1>Terms &amp; Conditions</h1>
-    <p class="meta"><strong>App:</strong> QuickieCon<br><strong>Last updated:</strong> July 18, 2026</p>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <p class="lead">These Terms &amp; Conditions ("Terms") govern your use of <strong>QuickieCon</strong> ("the App"), provided by <strong>QuickieDev</strong> ("we", "us", "our"). By downloading, installing, or using QuickieCon, you agree to these Terms. If you do not agree, please do not use the App.</p>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html" aria-label="QuickieCon home"><span class="logo-mark">Q</span>QuickieCon</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#chat">Group Chat</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="https://play.google.com/store/apps/details?id=com.quickie.quickiecon.share" target="_blank" rel="noopener">
+        <svg class="i" aria-hidden="true"><use href="icons.svg#download"/></svg>Get the app
+      </a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="i open-icon" aria-hidden="true"><use href="icons.svg#menu"/></svg>
+        <svg class="i close" aria-hidden="true"><use href="icons.svg#x"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#chat">Group Chat</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.quickie.quickiecon.share" target="_blank" rel="noopener">
+          <svg class="i" aria-hidden="true"><use href="icons.svg#download"/></svg>Get it on Google Play
+        </a>
+      </div>
+    </nav>
+  </header>
 
-    <h2>1. What QuickieCon Is</h2>
-    <p>QuickieCon lets nearby devices on the same Wi-Fi network share files and play music together, directly device-to-device. There is no account to create, no server that hosts your content, and no internet connection required for the core sharing and music features.</p>
+  <main id="main">
+    <section class="page-hero" data-loop>
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container">
+        <span class="pill" data-reveal>Legal</span>
+        <h1 data-reveal style="--d:.08s"><span class="grad">Terms</span> &amp; Conditions</h1>
+        <div class="meta-line" data-reveal style="--d:.16s"><span>App: QuickieCon</span><span>Last updated: July 18, 2026</span></div>
+      </div>
+    </section>
 
-    <h2>2. Eligibility</h2>
-    <p>QuickieCon is a general-audience app. If you are below the age required by the laws of your country to accept these Terms on your own, you should use the App only with the permission and involvement of a parent or guardian.</p>
+    <div class="container">
+      <article class="prose" data-reveal>
+        <p class="lead">These Terms &amp; Conditions ("Terms") govern your use of <strong>QuickieCon</strong> ("the App"), provided by <strong>QuickieDev</strong> ("we", "us", "our"). By downloading, installing, or using QuickieCon, you agree to these Terms. If you do not agree, please do not use the App.</p>
 
-    <h2>3. Acceptable Use</h2>
-    <p>You agree to use QuickieCon only for lawful purposes. You will not:</p>
-    <ul>
-      <li>Share content that is illegal, or that infringes someone else's rights (including copyright, trademark, or privacy), or that you do not have the right to share.</li>
-      <li>Harass, threaten, or send unwanted or harmful content to other people in a session.</li>
-      <li>Distribute malware, viruses, or other harmful files.</li>
-      <li>Attempt to disrupt, reverse-engineer, or interfere with the normal operation of the App.</li>
-    </ul>
-    <p>You are solely responsible for the files and content you choose to send or receive. A session runs over a shared local network, so anyone connected to that session can receive what is sent to the group — only share with people and networks you trust.</p>
+        <h2>1. What QuickieCon Is</h2>
+        <p>QuickieCon lets nearby devices on the same Wi-Fi network share files and play music together, directly device-to-device. There is no account to create, no server that hosts your content, and no internet connection required for the core sharing and music features.</p>
 
-    <h2>4. No Account and No Stored Content</h2>
-    <p>QuickieCon does not require an account and does not store the content you share on any server we operate. All sharing happens directly between devices on the same local network. As a result, we cannot access, recover, moderate, or restore anything you send or receive.</p>
+        <h2>2. Eligibility</h2>
+        <p>QuickieCon is a general-audience app. If you are below the age required by the laws of your country to accept these Terms on your own, you should use the App only with the permission and involvement of a parent or guardian.</p>
 
-    <h2>5. Your Content</h2>
-    <p>Any file or content you send or receive through QuickieCon remains yours (or belongs to its original owner). We claim no ownership of, and no rights over, your content.</p>
+        <h2>3. Acceptable Use</h2>
+        <p>You agree to use QuickieCon only for lawful purposes. You will not:</p>
+        <ul>
+          <li>Share content that is illegal, or that infringes someone else's rights (including copyright, trademark, or privacy), or that you do not have the right to share.</li>
+          <li>Harass, threaten, or send unwanted or harmful content to other people in a session.</li>
+          <li>Distribute malware, viruses, or other harmful files.</li>
+          <li>Attempt to disrupt, reverse-engineer, or interfere with the normal operation of the App.</li>
+        </ul>
+        <p>You are solely responsible for the files and content you choose to send or receive. A session runs over a shared local network, so anyone connected to that session can receive what is sent to the group — only share with people and networks you trust.</p>
 
-    <h2>6. Intellectual Property</h2>
-    <p>The QuickieCon app, along with its name, logo, and design, is owned by QuickieDev. You may not copy, modify, resell, or redistribute the App except through normal use obtained from an official app store.</p>
+        <h2>4. No Account and No Stored Content</h2>
+        <p>QuickieCon does not require an account and does not store the content you share on any server we operate. All sharing happens directly between devices on the same local network. As a result, we cannot access, recover, moderate, or restore anything you send or receive.</p>
 
-    <h2>7. Disclaimer of Warranty</h2>
-    <p>QuickieCon is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without warranties of any kind, whether express or implied. We do not guarantee that the App will be uninterrupted or error-free, or that every transfer will complete successfully. Your use of the App is at your own risk.</p>
+        <h2>5. Your Content</h2>
+        <p>Any file or content you send or receive through QuickieCon remains yours (or belongs to its original owner). We claim no ownership of, and no rights over, your content.</p>
 
-    <h2>8. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, QuickieDev will not be liable for any indirect, incidental, or consequential damages arising from your use of the App, including any loss of data or files or any unsuccessful transfer. Because local-network transfers are not encrypted, you are responsible for deciding whether a given network is safe for the content you choose to share.</p>
+        <h2>6. Intellectual Property</h2>
+        <p>The QuickieCon app, along with its name, logo, and design, is owned by QuickieDev. You may not copy, modify, resell, or redistribute the App except through normal use obtained from an official app store.</p>
 
-    <h2>9. Termination</h2>
-    <p>You may stop using QuickieCon at any time by uninstalling it. We may update, suspend, or discontinue the App or any of its features at any time.</p>
+        <h2>7. Disclaimer of Warranty</h2>
+        <p>QuickieCon is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis, without warranties of any kind, whether express or implied. We do not guarantee that the App will be uninterrupted or error-free, or that every transfer will complete successfully. Your use of the App is at your own risk.</p>
 
-    <h2>10. Changes to These Terms</h2>
-    <p>We may update these Terms as the App evolves. When we do, we will revise the "Last updated" date above. Continuing to use the App after a change means you accept the updated Terms.</p>
+        <h2>8. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, QuickieDev will not be liable for any indirect, incidental, or consequential damages arising from your use of the App, including any loss of data or files or any unsuccessful transfer. Because local-network transfers are not encrypted, you are responsible for deciding whether a given network is safe for the content you choose to share.</p>
 
-    <h2>11. Governing Law</h2>
-    <p>These Terms are governed by the laws of <strong>Pakistan</strong>, without regard to its conflict-of-law rules, except where the law of your country of residence requires otherwise.</p>
+        <h2>9. Termination</h2>
+        <p>You may stop using QuickieCon at any time by uninstalling it. We may update, suspend, or discontinue the App or any of its features at any time.</p>
 
-    <h2>12. Contact Us</h2>
-    <p>If you have any questions about these Terms, email us at <a href="mailto:support.quickiedev@gmail.com">support.quickiedev@gmail.com</a>.</p>
+        <h2>10. Changes to These Terms</h2>
+        <p>We may update these Terms as the App evolves. When we do, we will revise the "Last updated" date above. Continuing to use the App after a change means you accept the updated Terms.</p>
 
-    <footer>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="about.html">About</a>
-    </footer>
+        <h2>11. Governing Law</h2>
+        <p>These Terms are governed by the laws of <strong>Pakistan</strong>, without regard to its conflict-of-law rules, except where the law of your country of residence requires otherwise.</p>
+
+        <h2>12. Contact Us</h2>
+        <p>If you have any questions about these Terms, email us at <a href="mailto:support.quickiedev@gmail.com">support.quickiedev@gmail.com</a>.</p>
+      </article>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark">Q</span>QuickieCon</a>
+        <p>Share files, play music and chat with nearby devices on your local Wi-Fi. Offline. Fast. Beautiful.</p>
+      </div>
+      <div>
+        <h3>Product</h3>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#chat">Group Chat</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.quickie.quickiecon.share" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="mailto:support.quickiedev@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span data-year>2026</span> QuickieDev. All rights reserved.</div>
+  </footer>
 </body>
 </html>

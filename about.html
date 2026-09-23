@@ -4,39 +4,118 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — QuickieCon</title>
+  <meta name="description" content="QuickieCon is a local Wi-Fi app for sharing files, playing music together and group chat, by QuickieDev.">
+  <meta name="theme-color" content="#0a0a0f">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
-  <main>
-    <a class="brand" href="index.html">Quickie<span>Con</span></a>
-    <h1>About</h1>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <p class="lead"><strong>QuickieCon</strong> is a local Wi-Fi file-sharing and music app by <strong>QuickieDev</strong>. No internet, no accounts, no waiting.</p>
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html" aria-label="QuickieCon home"><span class="logo-mark">Q</span>QuickieCon</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#chat">Group Chat</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="https://play.google.com/store/apps/details?id=com.quickie.quickiecon.share" target="_blank" rel="noopener">
+        <svg class="i" aria-hidden="true"><use href="icons.svg#download"/></svg>Get the app
+      </a>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg class="i open-icon" aria-hidden="true"><use href="icons.svg#menu"/></svg>
+        <svg class="i close" aria-hidden="true"><use href="icons.svg#x"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#chat">Group Chat</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="privacy.html">Privacy</a>
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.quickie.quickiecon.share" target="_blank" rel="noopener">
+          <svg class="i" aria-hidden="true"><use href="icons.svg#download"/></svg>Get it on Google Play
+        </a>
+      </div>
+    </nav>
+  </header>
 
-    <h2>What it does</h2>
-    <ul>
-      <li><strong>File Sharing</strong> — send photos, videos, documents, contacts, and (on Android) installed apps directly to nearby devices over the same Wi-Fi network. No upload, no size limits from a server, no sign-up.</li>
-      <li><strong>Music Sync</strong> — one person picks the music, everyone on the group hears it together, perfectly in time — like a shared speaker across every phone in the room.</li>
-    </ul>
+  <main id="main">
+    <section class="page-hero" data-loop>
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container">
+        <span class="pill" data-reveal>By QuickieDev</span>
+        <h1 data-reveal style="--d:.08s">About <span class="grad">QuickieCon</span></h1>
+        <p data-reveal style="--d:.16s">A local Wi-Fi app for sharing files, playing music together and chatting with the people around you. No internet, no accounts, no waiting.</p>
+      </div>
+    </section>
 
-    <h2>How it works</h2>
-    <p>Open QuickieCon, pick a feature, and either <strong>create a group</strong> or <strong>join one</strong> nearby (via auto-discovery or a QR scan). Everyone on the same Wi-Fi network connects directly, device-to-device — nothing passes through a server, and nothing is uploaded anywhere.</p>
+    <div class="container">
+      <article class="prose" data-reveal>
+        <h2>What it does</h2>
+        <ul>
+          <li><strong>File Sharing</strong>: send photos, videos, documents, contacts, and (on Android) installed apps directly to nearby devices over the same Wi-Fi network. No upload, no size limits from a server, no sign-up.</li>
+          <li><strong>Music Sync</strong>: one person picks the music, everyone in the group hears it together, perfectly in time, like a shared speaker across every phone in the room.</li>
+          <li><strong>Group Chat</strong>: talk to everyone in your group in real time, with replies, emoji reactions, typing indicators and read receipts. Messages are never saved and disappear when the session ends.</li>
+        </ul>
 
-    <h2>Why local-first</h2>
-    <p>Your files and your music stay between your devices. Because QuickieCon doesn't rely on the cloud, it works anywhere you have a shared Wi-Fi network — no signal, no data plan, no accounts required.</p>
+        <h2>How it works</h2>
+        <p>Open QuickieCon, pick a feature, and either <strong>create a group</strong> or <strong>join one</strong> nearby (via auto-discovery or a QR scan). Everyone on the same Wi-Fi network connects directly, device-to-device. Nothing passes through a server, and nothing is uploaded anywhere.</p>
 
-    <h2>Platforms</h2>
-    <p>QuickieCon is available on <strong>Android</strong> and <strong>iOS</strong>, with desktop support (Windows/macOS/Linux) for file sharing.</p>
+        <h2>Why local-first</h2>
+        <p>Your files, your music and your conversations stay between your devices. Because QuickieCon doesn't rely on the cloud, it works anywhere you have a shared Wi-Fi network, with no signal, no data plan and no accounts required.</p>
 
-    <h2>Made by QuickieDev</h2>
-    <p>QuickieCon is built and maintained by <strong>QuickieDev</strong>. We're a small, independent team building simple, fast, offline-first tools — QuickieCon is our first app, with more on the way.</p>
-    <p>Questions, feedback, or found a bug? Reach us at <a href="mailto:support.quickiedev@gmail.com">support.quickiedev@gmail.com</a>.</p>
+        <h2>Platforms</h2>
+        <p>QuickieCon is available on <strong>Android</strong> and <strong>iOS</strong>, with desktop support (Windows/macOS/Linux) for file sharing.</p>
 
-    <footer>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="about.html">About</a>
-    </footer>
+        <h2>Made by QuickieDev</h2>
+        <p>QuickieCon is built and maintained by <strong>QuickieDev</strong>. We're a small, independent team building simple, fast, offline-first tools. QuickieCon is our first app, with more on the way.</p>
+        <p>Questions, feedback, or found a bug? Reach us at <a href="mailto:support.quickiedev@gmail.com">support.quickiedev@gmail.com</a>.</p>
+      </article>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark">Q</span>QuickieCon</a>
+        <p>Share files, play music and chat with nearby devices on your local Wi-Fi. Offline. Fast. Beautiful.</p>
+      </div>
+      <div>
+        <h3>Product</h3>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#chat">Group Chat</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.quickie.quickiecon.share" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="mailto:support.quickiedev@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">© <span data-year>2026</span> QuickieDev. All rights reserved.</div>
+  </footer>
 </body>
 </html>
